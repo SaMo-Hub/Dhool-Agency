@@ -3,8 +3,9 @@ import Button from './components/Button'
 
 export default function PricingComponent({stroke}) {
   return (
-    <div className='bg-[#171717] relative  w-fit mt-10 font-urbanist font-medium rounded-[32px]  items-center flex px-10 py-8 flex-col gap-8'>
-        <div className={`${stroke ? 'inline' : 'hidden'} border-2 border-white border-dashed masked-stroke  absolute w-full h-full top-0 rounded-[32px]`}></div>
+    <div className={`${stroke ? '-top-6' : 'top-0'} bg-opacity-0 bg-gradient-to-b from-[#ffffff12] to-[#ffffff06] relative  w-fit mt-10 font-urbanist font-medium rounded-[32px]  items-center flex px-10 py-8 flex-col gap-8`}>
+        <div className={`${stroke ? 'inline' : 'hidden'} border-[#ffa200e8] border masked-strokes  absolute w-full h-full top-0 rounded-[32px]`}></div>
+        <div className={` border-[#ffffff28] border masked-stroke  absolute w-full h-full top-0 rounded-[32px]`}></div>
             <div className='gap-2 flex flex-col justify-center items-center text-center'>
                 <h4 className='text-[28px] '>Take-Off</h4>
                 <div className='flex  text-[#FF8C00] items-center gap-2'>

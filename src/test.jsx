@@ -101,7 +101,7 @@ export default function Test() {
       <div className="flex gap-52">
         {/* Section Texte (sticky) */}
         <div className="sticky h-[75vh] top-20 py-[10em] flex flex-col gap-10">
-          <div className="w-fit font-semibold px-8 py-5 rounded-lg bg-[#ffffff2a] flex flex-col justify-center items-center">
+          <div className="w-fit font-semibold px-8 py-5 rounded-lg bg-[#ffffff17] flex flex-col justify-center items-center">
             <p className="text-[#8B8B8B]">Étape</p>
             <div className="text-[40px] masked-text overflow-hidden h-[60px]">
               <p ref={etapeRef} className="flex  items-center flex-col">

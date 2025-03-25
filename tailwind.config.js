@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
+        instrument: ['"Instrument Serif"', 'serif'],
       }
     },
   },

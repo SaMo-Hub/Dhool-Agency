@@ -7,7 +7,7 @@ export default function FaqComponent(
   const [open, setOpen] = useState(false)
 
   return (
-    <div  className='bg-[#ffffff2b] transition-all overflow-hidden relative w-full  font-urbanist font-medium rounded-xl border-[#ffffff19] border-2 p-5 '>
+    <div  className='bg-[#ffffff10] transition-all overflow-hidden relative w-full  font-urbanist font-medium rounded-xl border-[#ffffff19] border p-5 '>
         <div  onClick={()=> setOpen(!open)} className='cursor-pointer flex gap-12 items-center justify-between'>
             <h4 className='text-[rgba(255,252,252,0.66)]'>J’ai des besoins particuliers, possible d’aménager les formules ?</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">

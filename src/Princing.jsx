@@ -6,7 +6,8 @@ export default function Princing() {
   return (
     <div className='mt-80 ml-20'>
         <TitreH2 text1={"Avec nous, pas de bulshit."} text2={"Les prix sont fixes"} />
-        <div className='flex flex-col md:flex-row items-center justify-center'>
+        <div className='flex flex-col gap-4 md:flex-row items-center justify-center'>
+            <PricingComponent/>
             <PricingComponent stroke={true}/>
             <PricingComponent/>
         </div>

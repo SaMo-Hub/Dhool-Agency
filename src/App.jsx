@@ -3,6 +3,7 @@ import './App.css'
 import ReactLenis from 'lenis/react'
 import Test from './test';
 import Home from './Home';
+import { NavBar } from './components/NavBar';
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <section className="items-center text-white bg-black ">
       <Router>
         {/* Navbar pour naviguer */}
-
+           {/* <NavBar/> */}
         {/* Définition des routes */}
         <Routes>
           <Route path="/" element={<Home />} /> {/* Home */}

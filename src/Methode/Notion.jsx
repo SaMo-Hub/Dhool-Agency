@@ -21,7 +21,7 @@ const Notion = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="border-[#ffffff28] border bg-[#080808] relative overflow-hidden font-urbanist text-xs  text-white rounded-xl w-[2000px]"
+      className="border-[#ffffff1a] border bg-[#080808] relative overflow-hidden font-urbanist text-xs  text-white rounded-xl w-[2000px]"
     >
       <div className="absolute h-full w-full bgr"></div>
       <div className="absolute h-full w-full shadows"></div>

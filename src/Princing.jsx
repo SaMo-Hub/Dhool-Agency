@@ -1,19 +1,27 @@
 import React from 'react'
 import TitreH2 from './titreH2'
 import PricingComponent from './PricingComponent'
+import Button from './components/Button'
 
 export default function Princing() {
   return (
     <div className='mt-80 ml-20'>
         <TitreH2 text1={"Avec nous, pas de bulshit."} text2={"Les prix sont fixes"} />
-        <div className='flex flex-col gap-4 md:flex-row items-center justify-center'>
+        
+        <div className='w-full flex mt-24 justify-center items-center'>
+
+        <div className='flex w-fit gap-12 items-center justify-center gap flex-col'>
+        <div className='flex w-full flex-col gap-4 md:flex-row items-center justify-between'>
             <PricingComponent/>
             <PricingComponent stroke={true}/>
             <PricingComponent/>
         </div>
+      <div className='flex gap-4'>
 
-        <div className='bg-[#151515] font-urbanist font-medium rounded-[32px] gap-10 px-8 py-8 flex item-center justify-center w-fit'>
-          <div className='w-fit flex flex-col gap-4 items-center'>
+        <div className='gap-4 justify-between h-fit  bg-gradient-to-b from-[#ffffff12]  to-[#ffffff10] relative font-urbanist font-medium rounded-[32px]  px-8 py-8 flex item-center '>
+        <div className={` border-[#ffffff1a] border masked-strke z-40  absolute w-full h-full inset-0 rounded-[32px]`}></div>
+
+          <div className=' flex flex-col gap-4 items-center'>
             <h2 className='text-3xl'>Boost</h2>
             <div className='flex  text-[#FF8C00] items-center gap-2'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
@@ -28,9 +36,26 @@ export default function Princing() {
               <p className='text-4xl'>1500€</p>
               <p className='text-2xl text-[#ffffff33] '>/mois</p>
             </div>
+          
           </div>
 
-          <div className='grid grid-rows-2'>
+          <div className='justify-center items-center grid h- gap-x-6 gap-y-0 grid-cols-2 grid-rows-4'>
+            <div className='flex  flex-col gap-3'>
+                  <div className='gap-2 items-center flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                      </svg>
+                      <p>Identité de marque (2 pistes)</p>
+                  </div>
+              </div>
+            <div className='flex  flex-col gap-3'>
+                  <div className='gap-2 items-center flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                      </svg>
+                      <p>Identité de marque (2 pistes)</p>
+                  </div>
+              </div>
             <div className='flex flex-col gap-3'>
                   <div className='gap-2 items-center flex'>
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -39,8 +64,60 @@ export default function Princing() {
                       <p>Identité de marque (2 pistes)</p>
                   </div>
               </div>
+            <div className='flex flex-col gap-3'>
+                  <div className='gap-2 items-center flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                      </svg>
+                      <p>Identité de marque (2 pistes)</p>
+                  </div>
+              </div>
+            <div className='flex flex-col gap-3'>
+                  <div className='gap-2 items-center flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                      </svg>
+                      <p>Identité de marque (2 pistes)</p>
+                  </div>
+              </div>
+            <div className='flex flex-col gap-3'>
+                  <div className='gap-2 items-center flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                      </svg>
+                      <p>Identité de marque (2 pistes)</p>
+                  </div>
+              </div>
+            <div className='flex flex-col gap-3'>
+                  <div className='gap-2 items-center flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                      </svg>
+                      <p>Identité de marque (2 pistes)</p>
+                  </div>
+              </div>
+            <div className='flex flex-col gap-3'>
+                  <div className='gap-2 items-center flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                      </svg>
+                      <p>Identité de marque (2 pistes)</p>
+                  </div>
+              </div>
+           
+            
             </div>
         </div>
+
+        <div className='border-[#ffffff1a] bg-gradient-to-b from-[#ffffff12]  to-[#ffffff10] border gap-7 flex flex-col font-urbanist  w-[330px] rounded-[32px]  px-8 py-8 '>
+          <h3 className='font-semibold text-2xl'>Ajoutez vos suppléments</h3>
+          <p className='font-light'>Ajoutez n'importe quel élément sur-mesure à votre base et rendez-la absolument unique (pages supp, pitch/sales deck, blog...) Réservez un appel pour en savoir plus !</p>
+          <Button text={"Réserver un appel"}/>
+        </div>
+        </div>
+        </div>
+        </div>
+
     </div>
   )
 }

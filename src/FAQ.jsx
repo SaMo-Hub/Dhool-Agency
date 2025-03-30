@@ -25,7 +25,7 @@ export default function FAQ() {
     );
   }, []);
   return (
-    <div className='mx-20 gap-24 lg:flex-row flex-col flex mt-80 '>
+    <div className='mx-20 gap-24 pb-24 lg:flex-row flex-col flex mt-80 '>
       <TitreH2 textRefs={textRef} text1={"Vous avez"} text2={"une question ?"}/>
       
         <div className='w-full'>

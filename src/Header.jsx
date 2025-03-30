@@ -25,14 +25,14 @@ function Header() {
     <div className="pt-44 font-urbanist">
       <div>
         <div className="flex gap-10 flex-col justify-center items-center">
-          <h1 className="text-center lg:w-[40%] mx-20 text-8xl font-medium font-urbanist">
-            On crée vos{" "}
-            <span className="bg-gradient-to-b from-[#777777] swap to-[#414141] bg-clip-text text-transparent font-instrument italic ">
-              <br />
-              contenus vidéo
+          <h1 className="text-center lg:w-[60%] mx-20 text-7xl font-medium font-urbanist">
+          Devenez irrésistible sur votre marché et signez <br /> vos 
+            <span className="ml-4 bg-gradient-to-b from-[#777777] swap to-[#414141] bg-clip-text text-transparent font-instrument italic ">
+            
+               clients de rêves
             </span>
           </h1>
-          <p className="w-[30%] text-lg text-center">
+          <p className="w-[40%] text-lg text-center">
             Branding, landing pages et sites marketing sur-mesure dans des
             offres packagées, démarrez en moins de 5 minutes.
           </p>

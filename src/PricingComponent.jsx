@@ -1,11 +1,11 @@
 import React from 'react'
 import Button from './components/Button'
 
-export default function PricingComponent({stroke}) {
+export default function PricingComponent({stroke, text}) {
   return (
-    <div className={`${stroke ? '-top-6' : 'top-0'} bg-opacity-0 bg-gradient-to-b from-[#ffffff12] to-[#ffffff06] relative  w-fit mt-10 font-urbanist font-medium rounded-[32px]  items-center flex px-10 py-8 flex-col gap-8`}>
+    <div className={`${stroke ? '-top-6' : 'top-0'}  bg-gradient-to-b from-[#ffffff12]  to-[#ffffff10] relative  w-fit mt-10 font-urbanist font-medium rounded-[32px]  items-center flex px-10 py-8 flex-col gap-8`}>
         <div className={`${stroke ? 'inline' : 'hidden'} border-[#ffa200e8] border masked-strokes  absolute w-full h-full top-0 rounded-[32px]`}></div>
-        <div className={` border-[#ffffff28] border masked-stroke  absolute w-full h-full top-0 rounded-[32px]`}></div>
+        <div className={` border-[#ffffff28] border masked-sroke  absolute w-full h-full top-0 rounded-[32px]`}></div>
             <div className='gap-2 flex flex-col justify-center items-center text-center'>
                 <h4 className='text-[28px] '>Take-Off</h4>
                 <div className='flex  text-[#FF8C00] items-center gap-2'>
@@ -22,7 +22,43 @@ export default function PricingComponent({stroke}) {
             </div>
             <p className='text-[40px] '>0€</p>
 
-            <div className='flex flex-col gap-3'>
+            <div className='flex  flex-col gap-3'>
+                <div className='gap-2 items-center flex'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <p>Identité de marque (2 pistes)</p>
+                </div>
+                <div className='gap-2 items-center flex'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <p>Identité de marque (2 pistes)</p>
+                </div>
+                <div className='gap-2 items-center flex'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <p>Identité de marque (2 pistes)</p>
+                </div>
+                <div className='gap-2 items-center flex'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <p>Identité de marque (2 pistes)</p>
+                </div>
+                <div className='gap-2 items-center flex'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <p>Identité de marque (2 pistes)</p>
+                </div>
+                <div className='gap-2 items-center flex'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <p>Identité de marque (2 pistes)</p>
+                </div>
                 <div className='gap-2 items-center flex'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>

@@ -5,7 +5,7 @@ const GoogleMeet = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="border-[#ffffff28] border bg-[#080808] text-xs overflow-hidden relative font-urbanist font-light  text-white rounded-xl w-fit"
+      className="border-[#ffffff1a] border bg-[#080808] text-xs overflow-hidden relative font-urbanist font-light  text-white rounded-xl w-fit"
     >
       <div className="absolute h-full w-full bgr"></div>
       <div className="absolute h-full w-full shadows"></div>

@@ -21,8 +21,8 @@ const Home = () => {
       <Header />
       <Test />
 
-      <Logiciel />
-      {/* <VisionDevienLegende/> */}
+      {/* <Logiciel /> */}
+      <VisionDevienLegende/>
       <Princing />
       <FAQ />
     </div>

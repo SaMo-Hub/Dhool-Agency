@@ -25,16 +25,16 @@ export default function FAQ() {
     );
   }, []);
   return (
-    <div className='mx-20 gap-24 pb-24 lg:flex-row flex-col flex mt-80 '>
+    <div className='mx-20 gap-y-10 justify-between pb-24 lg:flex-row flex-col flex mt-72 lg:mt-80 '>
       <TitreH2 textRefs={textRef} text1={"Vous avez"} text2={"une question ?"}/>
       
-        <div className='w-full'>
+        <div className=''>
             <div className='flex font-urbanist mb-6 text-xl font-medium'>
                 <h3>
                     Oui,mais...
                 </h3>
             </div>
-            <div className='flex flex-col gap-2'>
+            <div className='flex  flex-col gap-2'>
               <FaqComponent/>
               <FaqComponent/>
               <FaqComponent/>

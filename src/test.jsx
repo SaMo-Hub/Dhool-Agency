@@ -81,24 +81,24 @@ export default function Test() {
       tl.to(textContainerRef.current, {
         opacity: 0,
         filter: "blur(10px)",
-        duration: 0.8,
+        duration: 0.5,
         ease: "power2.out",
       })
         .add(() => setActiveStep(index)) // Changer le texte une fois que l'opacité est 0
         .to(textContainerRef.current, {
           opacity: 1,
           filter: "blur(0px)",
-          duration: 0.8,
+          duration: 0.5,
           ease: "power2.out",
         });
     }
   };
   return (
-    <div className="ml-20 mt-80 h-full font-urbanist text-white">
+    <div className="ml-14 md:ml-20 mt-72 lg:mt-80  h-full font-urbanist text-white">
       <TitreH2 text1={"Grâce à une méthode"} text2={"en 4 étapes"} />
 
       {/* Conteneur */}
-      <div className="flex gap-52">
+      <div className="flex flex-row gap-20">
         {/* Section Texte (sticky) */}
         <div className="sticky h-[75vh] top-20 py-[10em] flex flex-col gap-10">
           <div className="w-fit font-semibold px-8 py-5 rounded-lg bg-[#ffffff17] flex flex-col justify-center items-center">
@@ -116,7 +116,7 @@ export default function Test() {
             </div>
           </div>
 
-          <div className="w-[320px]   flex flex-col gap-5 opacity-100 ">
+          <div className="w-[320px]  bg flex flex-col gap-5 opacity-100 ">
             <div ref={textContainerRef}>
               <div className="flex items-center">
                 <div className="h-3 w-3 absolute -left-7 rounded-full bg-white" />
@@ -133,7 +133,7 @@ export default function Test() {
         </div>
 
         {/* Section Images avec défilement */}
-        <div className="relative  overflow-hidden flex mt-32 flex-col gap-10 ml-[0px]">
+        <div className="relative opacity-0 lg:opacity-100  overflow-hidden flex mt-32 flex-col gap-10 ml-[0px]">
           
           {composants.map((Component, index) => (
   <Component  ref={el => imagesRef.current[index] = el} />

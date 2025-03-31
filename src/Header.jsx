@@ -1,44 +1,99 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import danteh from "../public/images/Miniature/danteh.png";
 import Button from "./components/Button";
 
 function Header() {
+  const containerRef = useRef(null);
+  const containerImageRef = useRef(null);
+  const containerParagpraheef = useRef(null);
+  const buttonref = useRef(null);
+  
   useEffect(() => {
-    const imagesContainer = document.querySelector(".images-container");
-    
-    // Dupliquer les images dans le conteneur pour un défilement continu
-    const totalWidth = imagesContainer.scrollWidth; // Largeur totale du conteneur
-    const duplicateImages = imagesContainer.cloneNode(true);
-    imagesContainer.appendChild(duplicateImages); // Ajouter les images dupliquées pour garantir un défilement fluide
-
-    // Animation pour faire défiler les images à l'infini et sans coupure
-    gsap.to(imagesContainer, {
-      xPercent: -100, // Déplace le conteneur d'images à -100% sur l'axe X
-      repeat: -1, // Répète l'animation à l'infini
-      duration: 10, // Durée du défilement complet d'une boucle
-      ease: "linear", // Défilement fluide et constant
-    });
+    if (containerRef.current && containerImageRef.current) {
+      const words = containerRef.current.querySelectorAll(".word");
+  
+      // Animation des mots
+      gsap.fromTo(
+        words,
+        { y: 100, opacity: 0, filter: "blur(10px)" },
+        {
+          y: 0,
+          opacity: 1,
+          filter: "blur(0px)",
+          stagger: 0.04,
+          duration: 1.5,
+          ease: "power3.out",
+          delay:1
+        }
+      );
+   
+      const elements = containerParagpraheef.current.children; // Récupère tous les enfants
+      gsap.fromTo(
+        elements, // Passe un tableau d'éléments
+        { y: 100, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          filter: "blur(0px)",
+          stagger: 0.2, // Délai entre chaque élément
+          duration: 1.5,
+          ease: "power3.out",
+          delay:1
+        }
+      );
+      // Animation de l'image avec un timeline
+      gsap.timeline()
+        .fromTo(containerImageRef.current, 
+          { opacity: 0 }, // Commence hors de l'écran
+          { opacity: 1, ease: "power3.in", duration: 0.8 }
+        )
+        .fromTo(containerImageRef.current,
+          {y: -500},
+          {
+            y:0,
+          filter: "blur(0px)",
+          stagger: 0.04,
+          duration: 1.5,
+          ease: "power3.out",
+         delay: 0.2,
+        });
+    }
   }, []);
+  
+  
 
   return (
     <div className="pt-44 font-urbanist">
       <div>
         <div className="flex gap-10 flex-col justify-center items-center">
-          <h1 className="text-center lg:w-[60%] mx-20 text-7xl font-medium font-urbanist">
-          Devenez irrésistible sur votre marché et signez <br /> vos 
-            <span className="ml-4 bg-gradient-to-b from-[#777777] swap to-[#414141] bg-clip-text text-transparent font-instrument italic ">
+          <h1 ref={containerRef} className="text-center lg:w-[60%]  mx-20 text-5xl lg:text-6xl xl:text-7xl font-medium font-urbanist">
+          {"Devenez irrésistible sur votre marché et signez vos".split(" ").map((word, index) => (
+              <div className="word inline-block mr-2" id="index">
+                {word}
+              </div>
+           ))}
             
-               clients de rêves
-            </span>
+           {"clients de rêves".split(" ").map((word, index) => (
+        <span
+          key={index}
+          className="word bg-gradient-to-b from-[#777777] to-[#414141] bg-clip-text text-transparent font-instrument italic pr-2 inline-block mr-2 pb-1"
+        >
+          {word}
+        </span>
+      ))}
           </h1>
-          <p className="w-[40%] text-lg text-center">
+      <div ref={containerParagpraheef} className="flex flex-col gap-10 items-center justify-center">
+
+          <p  className="lg:w-[50%]   w-3/4  text-lg text-center">
             Branding, landing pages et sites marketing sur-mesure dans des
             offres packagées, démarrez en moins de 5 minutes.
           </p>
-          <Button text={"Découvrir nos offres"} />
+          <Button ref={buttonref} text={"Découvrir nos offres"} />
+      </div>
         </div>
-        <div className="h-[450px] masked-text mt-40 overflow-x-hidden flex">
+
+        <div ref={containerImageRef} className="h-[450px] masked-text mt-40 overflow-x-hidden flex">
           <div className="images-container flex gap-5">
             {/* Image 1 */}
             <img className="h-full min-w-max" src={danteh} alt="Image 1" />
@@ -56,7 +111,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 grid-cols-2 gap-y-10 font-medium gap-x-5 mx-20 mt-20 justify-center items-center">
+      <div className="flex md:flex-row flex-col gap-y-10 font-medium gap-x-5 mx-20 mt-20 justify-center items-center">
         <div>
           <div className="flex gap-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

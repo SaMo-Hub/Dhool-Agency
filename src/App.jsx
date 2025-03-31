@@ -4,6 +4,7 @@ import ReactLenis from 'lenis/react'
 import Test from './test';
 import Home from './Home';
 import { NavBar } from './components/NavBar';
+import { PageProjets } from './Project/PageProjets';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         {/* Définition des routes */}
         <Routes>
           <Route path="/" element={<Home />} /> {/* Home */}
+          <Route path="/projets/:id" element={<PageProjets />} /> {/* Home */}
         </Routes>
       </Router>
     </section>

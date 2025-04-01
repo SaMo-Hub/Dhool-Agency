@@ -67,7 +67,7 @@ function Header() {
     <div className="pt-44 font-urbanist">
       <div>
         <div className="flex gap-10 flex-col justify-center items-center">
-          <h1 ref={containerRef} className="text-center lg:w-[60%]  mx-20 text-5xl lg:text-6xl xl:text-7xl font-medium font-urbanist">
+          <h1 ref={containerRef} className="text-center md:w-[60%] w-[70%] text-5xl mx-20 md:text-6xl lg:text-7xl font-medium font-urbanist">
           {"Devenez irrésistible sur votre marché et signez vos".split(" ").map((word, index) => (
               <div className="word inline-block mr-2" id="index">
                 {word}
@@ -93,7 +93,7 @@ function Header() {
       </div>
         </div>
 
-        <div ref={containerImageRef} className="h-[450px] masked-text mt-40 overflow-x-hidden flex">
+        <div ref={containerImageRef} className="h-[40vw] masked-text mt-40 overflow-x-hidden flex">
           <div className="images-container flex gap-5">
             {/* Image 1 */}
             <img className="h-full min-w-max" src={danteh} alt="Image 1" />
@@ -111,7 +111,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="flex md:flex-row flex-col gap-y-10 font-medium gap-x-5 mx-20 mt-20 justify-center items-center">
+      <div className="flex md:flex-row sm:w-[60%] md:w-auto flex-col gap-y-10 font-medium gap-x-5 mx-10 md:mx-20  mt-20 justify-center items-center">
         <div>
           <div className="flex gap-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

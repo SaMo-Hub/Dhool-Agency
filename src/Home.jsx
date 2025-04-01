@@ -6,6 +6,7 @@ import Logiciel from "./Logiciel";
 import VisionDevienLegende from "./VisionDevienLegende";
 import Princing from "./Princing";
 import FAQ from "./FAQ";
+import { Footer } from "./Footer";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <VisionDevienLegende/>
       <Princing />
       <FAQ />
+
     </div>
   );
 };

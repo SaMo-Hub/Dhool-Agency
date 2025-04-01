@@ -94,13 +94,13 @@ export default function Test() {
     }
   };
   return (
-    <div className="ml-14 md:ml-20 mt-72 lg:mt-80  h-full font-urbanist text-white">
+    <div className="ml-10 md:ml-20 mt-72 lg:mt-80  h-full font-urbanist text-white">
       <TitreH2 text1={"Grâce à une méthode"} text2={"en 4 étapes"} />
 
       {/* Conteneur */}
       <div className="flex flex-row gap-20">
         {/* Section Texte (sticky) */}
-        <div className="sticky h-[75vh] top-20 py-[10em] flex flex-col gap-10">
+        <div className="sticky h-[50vh] top-20 py-[10em] flex flex-col gap-10">
           <div className="w-fit font-semibold px-8 py-5 rounded-lg bg-[#ffffff17] flex flex-col justify-center items-center">
             <p className="text-[#8B8B8B]">Étape</p>
             <div className="text-[40px] masked-text overflow-hidden h-[60px]">
@@ -133,7 +133,7 @@ export default function Test() {
         </div>
 
         {/* Section Images avec défilement */}
-        <div className="relative opacity-0 lg:opacity-100  overflow-hidden flex mt-32 flex-col gap-10 ml-[0px]">
+        <div className="relative  overflow-hidden flex mt-32 flex-col gap-60 ml-[0px]">
           
           {composants.map((Component, index) => (
   <Component  ref={el => imagesRef.current[index] = el} />

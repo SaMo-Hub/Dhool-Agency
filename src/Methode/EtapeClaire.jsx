@@ -8,7 +8,7 @@ const EtapeClaire = forwardRef((props, ref) => {
   
 
   return (
-    <div  ref={ref} className="border-[#ffffff1a] border bg-[#080808] relative  text-xs  font-urbanist font-regular overflow-hidden text-white  rounded-xl w-[800px] ">
+    <div  ref={ref} className="border-[#ffffff1a]  border bg-[#080808] relative  text-xs  font-urbanist font-regular overflow-hidden text-white  rounded-xl w-[800px] ">
      <div className="absolute h-full w-full  bgr "></div>
       {/* <div className="absolute h-full w-full  bgr "></div> */}
       <div className="absolute h-full w-full  shadows "></div>

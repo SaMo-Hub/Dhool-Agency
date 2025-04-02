@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import danteh from "../public/images/Miniature/danteh.png";
 import Button from "./components/Button";
+import { motion } from 'framer-motion';
 
 function Header() {
   const containerRef = useRef(null);
@@ -64,8 +65,26 @@ function Header() {
   
 
   return (
-    <div className="pt-44 font-urbanist">
-      <div>
+    <motion.div className="pt-44 font-urbanist"
+   
+    >
+      <motion.div
+     animate={{ translateY: '100%', }}
+     exit={{ translateY: 0 }}
+     transition={{ duration: 0.6, ease:'easeIn' }}
+     className='slide-out'
+      />
+    <motion.div
+       initial={{ translateY: 0,  }}
+       animate={{ translateY: '100%', }}
+       transition={{ duration: 1, ease: [0.42, 0, 0.58, 1] }}
+       className='slide-inw'
+        />
+      <motion.div
+       animate={{ filter: "blur(0px)",}}
+       exit={{ filter: "blur(10px)",}}
+       transition={{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }}
+       >
         <div className="flex gap-10 flex-col justify-center items-center">
           <h1 ref={containerRef} className="text-center md:w-[60%] w-[70%] text-5xl mx-20 md:text-6xl lg:text-7xl font-medium font-urbanist">
           {"Devenez irrésistible sur votre marché et signez vos".split(" ").map((word, index) => (
@@ -110,7 +129,7 @@ function Header() {
             <img className="h-full min-w-max" src={danteh} alt="Image 8" />
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="flex md:flex-row sm:w-[60%] md:w-auto flex-col gap-y-10 font-medium gap-x-5 mx-10 md:mx-20  mt-20 justify-center items-center">
         <div>
           <div className="flex gap-3">
@@ -192,7 +211,7 @@ function Header() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

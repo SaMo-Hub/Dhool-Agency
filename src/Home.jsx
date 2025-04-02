@@ -7,10 +7,12 @@ import VisionDevienLegende from "./VisionDevienLegende";
 import Princing from "./Princing";
 import FAQ from "./FAQ";
 import { Footer } from "./Footer";
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <div className="bg-black -hidden  ">
+    <div className="items-center text-white bg-black ">
+       
       <div
         style={{
           background:

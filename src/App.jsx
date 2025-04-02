@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import ReactLenis from 'lenis/react'
 import Test from './test';
@@ -6,24 +5,30 @@ import Home from './Home';
 import { NavBar } from './components/NavBar';
 import { PageProjets } from './Project/PageProjets';
 import { Footer } from './Footer';
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
+  const location = useLocation()
 
  return (
-    <section className="items-center text-white bg-black ">
-      <Router>
+  <>
         {/* Navbar pour naviguer */}
            <NavBar/>
         {/* Définition des routes */}
-        <Routes>
+        {/* <ScrollToTop/> */}
+        <AnimatePresence mode='wait'>
+        
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} /> {/* Home */}
           <Route path="/projets/:id" element={<PageProjets />} /> {/* Home */}
         </Routes>
         <Footer/>
+        </AnimatePresence>
 
-      </Router>
-    </section>
+  </>
   );
 }
 

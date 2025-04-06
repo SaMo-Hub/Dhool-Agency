@@ -1,54 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stile.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Patrick+Hand&display=swap" rel="stylesheet">
-
-
+    <title>TrekDream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="stile.css">
 </head>
+
 <body>
-    <div class="all-might">
-        <img class="image" src="https://images.pexels.com/photos/4253829/pexels-photo-4253829.jpeg" alt="Paysage du Maroc"/>
-        <div class="tout">
+<div class="filtre">
+    <span id="login">
 
-        <h1 class="titre"><I>Desert du sahara</I></h1>
-        <div class="flex">
-            <div class=texte-texte2>
-                <h3 class="texte-bord">🌵✨ Le Majestueux Désert du Sahara ✨🌞</h3>
-                <p class="texte2">Le Sahara est le plus grand désert chaud du monde, un océan de dunes dorées sous un soleil brûlant ☀️. Le jour, la chaleur atteint 50°C, tandis que la nuit, le froid ❄️ s’installe.
+      <a class="home-icon" href="Profil.html"><i class="fa-solid fa-house menu-icon"></i></a>
+      <a class="texte-connexion" href="connexion.html"><i class="fa-solid fa-right-to-bracket menu-icon"></i>Se connecter</a>
+        <a class="texte-inscription" href="inscription.html"><i class="fa-solid fa-user-plus menu-icon"></i>S'inscrire </a>
+    </span>
+<div>
 
-                    🐫 Les nomades Touaregs parcourent ces terres infinies avec leurs caravanes, guidés par les étoiles 🌌. Malgré l’aridité, le désert abrite des animaux fascinants 🦎🐍 et des plantes résistantes 🌿.
-                    
-                    Sous un ciel étoilé magique, une nuit en bivouac ⛺ autour d’un feu 🔥 devient un souvenir inoubliable. Le Sahara, un monde de mystère et de beauté ✨🏜️.</p>
+    <img class="logo" src="logo.png" alt="logo"/>
+    <div class="flex-navabr">
+
+        <a class="texte-recherche" href="inscription.html"><i class="fa-solid fa-user-plus menu-icon"></i>Recherche</a>
+        
+        <a class="texteAccueil" href="inscription.html"><i class="fa-solid fa-user-plus menu-icon"></i>Accueil</a>
+        <a class="texteVoage" href="inscription.html"><i class="fa-solid fa-user-plus menu-icon"></i>Nos voyages </a>
+    </div>
+</div>
+
+    <div class="contenu">
+
+        <h2>Rechercher un trek</h2>
+        <label for="filtre-region">Région :</label>
+        <input type="text" id="filtre-region" placeholder="Ex: Désert, Montagne...">
+        
+        <label for="filtre-date">Date :</label>
+        <input type="date" id="filtre-date">
+        
+        <label for="filtre-difficulte">Difficulté :</label>
+        <select id="filtre-difficulte">
+            <option value="général">Toutes</option>
+            <option value="facile">Facile</option>
+            <option value="moyenne">Moyenne</option>
+            <option value="difficile">Difficile</option>
+        </select>
+        
+        <label for="filtre-tarif">Budget :</label>
+        <input type="number" id="filtre-tarif" placeholder="Ex: 500€">
+        
+        <button>Rechercher</button>
+        
+        <h3>Résultats :</h3>
+        <div id="liste-treks">
+            <div class="Resultat">
+                <strong>Désert du Sahara</strong> - Maroc - 10 Mars 2025 - Difficulté: Moyenne - Tarif: 600€
             </div>
-            <div class=texte-texte3>
-                <h3 class="texte-bord">Option Choix</h3>
-                <div class="texte2">
-                    
-                    <p class="espace">Difficulté : facile </p>
-                    <p class="espace">nombre d'étape: 4  </p>
-                    <p class="espace">durée : 15 jours  </p>
-                    <p class="espace">date:  26/09 - 32/09   </p>
-                    <p class="espace">prix: 3500$   </p>
-                    <p class="espace">moyen de transport : quad   </p>             
-                    <p class="espace">nombre d'étape:   </p>
-                    <p class="espace">nombre d'étape:   </p>
-
-
-                </div>
+            <div class="Resultat">
+                <strong>EXEMPLE 2</strong> - pays2 - 15 Avril 2025 - Difficulté: Facile - Tarif: 400€
+            </div>
+            <div class="Resultat">
+                <strong>EXEMPLE 3</strong> - pays3 - 20 Mai 2025 - Difficulté: Difficile - Tarif: 800€
             </div>
         </div>
     </div>
 </div>
-
+<footer>
+        <p>© 2025 DreamTrek - Searching Page</p>
+</footer>
 </body>
-
-
-
 </html>

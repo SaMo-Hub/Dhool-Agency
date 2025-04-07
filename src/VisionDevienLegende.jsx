@@ -6,13 +6,13 @@ import { listProjects } from "./assets/projects";
 
 export default function VisionDevienLegende() {
   return (
-    <div className=" mx-10 mt-20 md:mx-20 sm:mt-40 md:mt-80 font-urbanist">
+    <div id="exemple" className=" mx-10 mt-20 md:mx-20 sm:mt-40 md:mt-80 font-urbanist">
       <TitreH2 text1={"Quand la vision devient"} text2={"une légende"} />
       <div className="mt-0 gap-20 flex flex-col   ">
-        {listProjects.map((item) => (
-          <div className="flex flex-col lg:items-center lg:flex-row gap-10 w-full ">
+        {listProjects.map((item,index) => (
+          <div id={index} className="flex flex-col lg:items-center lg:flex-row gap-5 lg:gap-10 w-full ">
               <Link className="h-fit" to={`/projets/${item.id}`}>
-                <img className="opacity-20" src={item.logo} alt="" />
+                <img className="opacity-20 hover:opacity-30 transition-all duration-500" src={item.logo} alt="" />
               </Link>
               <div className="flex w-fit gap-2">
                 {item.skill.map((item) => (

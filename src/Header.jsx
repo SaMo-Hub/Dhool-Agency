@@ -65,7 +65,7 @@ function Header() {
   
 
   return (
-    <motion.div className="pt-44 font-urbanist"
+    <motion.div id="main" className="pt-44 font-urbanist"
    
     >
       <motion.div

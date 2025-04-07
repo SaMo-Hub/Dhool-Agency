@@ -1,14 +1,13 @@
 import React from "react";
 // import Test from './test';
 import Header from "./Header";
-import Test from "./test";
 import Logiciel from "./Logiciel";
 import VisionDevienLegende from "./VisionDevienLegende";
 import Princing from "./Princing";
 import FAQ from "./FAQ";
 import { Footer } from "./Footer";
 import { motion } from 'framer-motion';
-
+import Methode from "./Methode/Methode"
 const Home = () => {
   return (
     <div className="items-center text-white bg-black ">
@@ -22,7 +21,7 @@ const Home = () => {
       />
 
       <Header />
-      <Test />
+      <Methode />
 
       {/* <Logiciel /> */}
       <VisionDevienLegende/>

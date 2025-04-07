@@ -1,47 +1,42 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import TitreH2 from "./titreH2";
-import Button from "./components/Button";
-import GoogleMeet from "./Methode/GoogleMeet";
-import EtapeClaire from "./Methode/EtapeClaire";
-import Notion from "./Methode/Notion";
+import TitreH2 from "../titreH2";
+import Button from "../components/Button";
+import GoogleMeet from "./GoogleMeet";
+import EtapeClaire from "./EtapeClaire";
+import Notion from "./Notion";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Test() {
+export default function Methode() {
   const etapeRef = useRef(null);
   const imagesRef = useRef([]);
   const textContainerRef = useRef();
   const [activeStep, setActiveStep] = useState(0);
   console.log(imagesRef);
-  const composants = [Notion, GoogleMeet, EtapeClaire];
+  const composants = [GoogleMeet,Notion , EtapeClaire];
 
   const steps = [
     {
       number: "1",
-      title: "Démarrage en quelques clics",
+      title: "On se recontre",
       description:
-        "Démarrez rapidement et à distance, sans devis ni cahier des charges.",
+        "Un appel en visioconférence pour comprendre votre projet et préparer votre prochaine vidéo.",
     },
     {
       number: "2",
-      title: "Configuration Personnalisée",
+      title: "Suivi de projet et dashboard en ligne",
       description:
-        "Nous adaptons les paramètres selon vos besoins spécifiques.",
+        "Suivez le projet directement en ligne et accédez à toutes vos ressources.",
     },
     {
       number: "3",
-      title: "Mise en Production",
+      title: "Étapes claires et prédéfinies",
       description:
-        "Votre projet est lancé et optimisé pour de meilleures performances.",
+        "Soyez au courant de chaque étape, anticipez les next-steps et restez sereins.",
     },
-    {
-      number: "4",
-      title: "Suivi & Assistance",
-      description:
-        "Nous assurons un suivi continu pour garantir votre satisfaction.",
-    },
+
   ];
   useEffect(() => {
     if (!etapeRef.current || imagesRef.current.length === 0) return;
@@ -106,12 +101,9 @@ export default function Test() {
             <div className="text-[40px] masked-text overflow-hidden h-[60px]">
               <p ref={etapeRef} className="flex  items-center flex-col">
                 <span>1</span>
-                {/* <span>1.5</span> */}
                 <span>2</span>
-                {/* <span>2.5</span> */}
                 <span>3</span>
-                {/* <span>3.5</span> */}
-                <span>4</span>
+             
               </p>
             </div>
           </div>

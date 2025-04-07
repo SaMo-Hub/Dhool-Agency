@@ -5,7 +5,7 @@ import Button from './components/Button'
 
 export default function Princing() {
   return (
-    <div className='mt-72 lg:mt-80  mx-10 md:mx-20  '>
+    <div id='princing' className='mt-72 lg:mt-80  mx-10 md:mx-20  '>
         <TitreH2 text1={"Avec nous, pas de bulshit."} text2={"Les prix sont fixes"} />
         
         <div className='w-full flex mt-24 justify-center items-center'>

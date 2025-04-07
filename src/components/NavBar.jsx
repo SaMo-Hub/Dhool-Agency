@@ -58,19 +58,13 @@ export const NavBar = () => {
     gsap.timeline();
     gsap.fromTo(
       navbar, // Passe un tableau d'éléments
-      {y: -100,
-      },
-      {y: 0, duration: 1,ease: "power3.out", delay:1.3}
+      { y: -100 },
+      { y: 0, duration: 1, ease: "power3.out", delay: 1.3 }
     );
     gsap.fromTo(
       navbar, // Passe un tableau d'éléments
-      {width: "80px",
-      },
-      {width: "auto",
-        duration: 0.7,
-        ease: "power2.out",
-        delay:1.77
-      }
+      { width: "80px" },
+      { width: "auto", duration: 0.7, ease: "power2.out", delay: 1.77 }
     );
   }, [location]);
   return (
@@ -84,8 +78,15 @@ export const NavBar = () => {
           <li>
             <Link to={"/projets/1"}>Exemple</Link>
           </li>
-          <li>Pricing</li>
-          <li>FAQ</li>
+          {/* <li>
+            <Link to={"/#projets"}>Projets</Link>
+          </li> */}
+          <li>
+            <Link to={"/#princing"}>Princing</Link>
+          </li>
+          <li>
+            <Link to={"/#faq"}>Faq</Link>
+          </li>
         </ul>
 
         {/* Logo (toujours visible et centré) */}

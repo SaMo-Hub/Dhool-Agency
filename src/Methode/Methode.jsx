@@ -120,7 +120,7 @@ export default function Methode() {
                 {steps[activeStep].description}
               </p>
             </div>
-            <Button text={"Prendre rendez-vous"} />
+            <Button calendar={true} text={"Prendre rendez-vous"} />
           </div>
         </div>
 

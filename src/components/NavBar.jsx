@@ -67,26 +67,44 @@ export const NavBar = () => {
       { width: "auto", duration: 0.7, ease: "power2.out", delay: 1.77 }
     );
   }, [location]);
+
+  const navList = [
+    {
+      path: "/projets/1",
+      label: "Exemple",
+    },
+    // {
+    //   path: "/projets",
+    //   label: "Projets",
+    // },
+    {
+      path: "/#princing",
+      label: "Princing",
+    },
+    {
+      path: "/#faq",
+      label: "FAQ",
+    },
+    // {
+    //   path: "/contact",
+    //   label: "Contact",
+    // },
+  ]
   return (
-    <div className="z-50 justify-center items-center w-full fixed top-8 flex font-urbanist font-medium">
+    <butto className="z-50 justify-center items-center w-full fixed top-8 flex font-urbanist font-medium">
       <div
         ref={navbarRef}
         className="bg-[#111111]  overflow-hidden flex gap-6 items-center justify-center text-sm border-[#ffffff1a] border rounded-full px-1 py-1  text-[#ffffff9c] w-auto"
       >
         {/* Contenu du menu */}
         <ul className=" w-[200px] hidden sm:flex pl-4 gap-5 flex-none">
-          <li>
-            <Link to={"/projets/1"}>Exemple</Link>
-          </li>
-          {/* <li>
-            <Link to={"/#projets"}>Projets</Link>
-          </li> */}
-          <li>
-            <Link to={"/#princing"}>Princing</Link>
-          </li>
-          <li>
-            <Link to={"/#faq"}>Faq</Link>
-          </li>
+          {navList.map((item, index) => (
+            <li key={index}>
+              <Link className="hover:text-[#ffffffd7] transition-all" to={item.path}>{item.label}</Link>
+            </li>
+          ))}
+        
+            
         </ul>
 
         {/* Logo (toujours visible et centré) */}
@@ -99,10 +117,10 @@ export const NavBar = () => {
 
         {/* Texte à droite */}
         <div className="w-[200px] hidden sm:flex justify-end text-end flex-none">
-          <Button text={"Prendre rendez-vous"} secondary={true} />
+          <Button text={"Prendre rdendez-vous"} calendar={true} secondary={true} />
         </div>
       </div>
-    </div>
+    </butto>
   );
 };
 

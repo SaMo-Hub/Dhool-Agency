@@ -1,7 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { getCalApi } from "@calcom/embed-react";
 
-const Button = ({ text, secondary }) => {
+	
+	
+const Button = ({ text, secondary, calendar }) => {
+  useEffect(()=>{
+	  (async function () {
+		const cal = await getCalApi({"namespace":"45-min-meeting-zoom"});
+		cal("ui", {"theme":"dark","hideEventTypeDetails":false,"layout":"month_view"});
+	  })();
+	}, [])
   const buttonRef = useRef(null);
   const buttonBG = useRef(null);
 
@@ -37,12 +46,27 @@ const Button = ({ text, secondary }) => {
     }
   }, [secondary]); // Ajout de la dépendance `secondary`
 
-  if (secondary) {
-    return <div className='border border-[#ffffff19] w-fit px-5 py-2 text-white bg-[#ffffff18] transition-all hover:bg-[#ffffff28] rounded-full  font-medium text-sm relative '>{text}</div>;
-  }
-
+  
+  const calProps = calendar
+    ? {
+        "data-cal-link": "dhool-agency-yqjwt6/45-min-meeting-zoom",
+        "data-cal-namespace": "45-min-meeting-zoom",
+        "data-cal-config": JSON.stringify({ layout: "month_view", theme: "dark" }),
+      }
+    : {};
+    if (secondary) {
+      return <button 
+        {...calProps}
+      className='border border-[#ffffff19] w-fit px-5 py-2 text-white bg-[#ffffff18] transition-all hover:bg-[#ffffff28] rounded-full  font-medium text-sm relative '>{text}</button>;
+    }
+  
   return (
-    <div ref={buttonRef} className="bg-[#ffffff18] font-urbanist relative border-[#ffffff25] overflow-hidden group border-[1px] w-fit p-2 rounded-full">
+    
+
+    <button  
+    {...calProps}
+
+     ref={buttonRef} className="bg-[#ffffff18] font-urbanist relative border-[#ffffff25] overflow-hidden group border-[1px] w-fit p-2 rounded-full">
       <div className="bg-white overflow-visible relative px-5 py-2 rounded-full font-semibold text-black w-fit">
         <span className="z-10 font-medium text-sm relative">{text}</span>
         <div
@@ -50,7 +74,7 @@ const Button = ({ text, secondary }) => {
           className="ease-in-out duration-300 transition-all absolute z-0 w-full h-full inset-0 rounded-full scale-y-100 scale-100 group-hover:scale-110 group-hover:scale-y-[1.5] bg-[#fafafa]"
         ></div>
       </div>
-    </div>
+    </button>
   );
 };
 

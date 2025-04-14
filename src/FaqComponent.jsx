@@ -4,7 +4,7 @@ export default function FaqComponent({ title, paragraphe }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[#ffffff10] transition-all overflow-hidden relative w-full  font-urbanist font-medium rounded-xl border-[#ffffff19] border p-5 ">
+    <div className="bg-[#ffffff10] transition-all overflow-hidden relative w-full lg:w-[40rem]  font-urbanist font-medium rounded-xl border-[#ffffff19] border p-5 ">
       <div
         onClick={() => setOpen(!open)}
         className="cursor-pointer  flex gap-12 items-center justify-between"

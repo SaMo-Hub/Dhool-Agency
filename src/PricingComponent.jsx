@@ -13,7 +13,7 @@ export default function PricingComponent({
     <div
       className={`${
         stroke ? "-top-6" : "top-0"
-      }  bg-gradient-to-b from-[#ffffff12]  to-[#ffffff10] relative  w-fit mt-10 font-urbanist font-medium rounded-[32px]  items-center flex px-10 py-8 flex-col gap-8`}
+      }  bg-gradient-to-b from-[#ffffff12]  to-[#ffffff10] relative  w-fit h-fit mt-10 font-urbanist font-medium rounded-[32px]  items-center flex px-10 py-8 flex-col gap-8`}
     >
       <div
         className={`${

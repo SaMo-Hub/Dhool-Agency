@@ -8,9 +8,9 @@
 		cal("ui", {"theme":"dark","hideEventTypeDetails":false,"layout":"month_view"});
 	  })();
 	}, [])
-	return <Cal namespace="45-min-meeting-zoom"
+	return <Cal className=" w-auto " namespace="45-min-meeting-zoom"
 	  calLink="dhool-agency-yqjwt6/45-min-meeting-zoom"
-	  style={{width:"100%",height:"100%",overflow:"scroll"}}
+	  style={{height:"100%",}}
 	  config={{"layout":"month_view","theme":"dark"}}
     
 	  

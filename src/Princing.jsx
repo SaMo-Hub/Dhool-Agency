@@ -114,7 +114,7 @@ export default function Princing() {
         text2={"Les prix sont fixes"}
       />
 
-      <div className="w-full flex mt-24 justify-center items-center">
+      <div className="w-full flex justify-center items-center">
         <div className="flex w-fit gap-12 items-center justify-center gap flex-col">
           <div className="flex w-full flex-col gap-4 lg:flex-row items-  justify-between">
             {princingList.map((item) => (

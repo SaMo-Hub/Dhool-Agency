@@ -8,6 +8,9 @@ import FAQ from "./FAQ";
 import { Footer } from "./Footer";
 import { motion } from 'framer-motion';
 import Methode from "./Methode/Methode"
+import CalendarComponent from "./components/CalendarComponent";
+import { PrendreRdv } from "./PrendreRdv";
+import { Slider } from "./components/slider";
 const Home = () => {
   return (
     <div className="items-center text-white bg-black ">
@@ -22,10 +25,10 @@ const Home = () => {
 
       <Header />
       <Methode />
-
       {/* <Logiciel /> */}
       <VisionDevienLegende/>
       <Princing />
+      <PrendreRdv/>
       <FAQ />
 
     </div>

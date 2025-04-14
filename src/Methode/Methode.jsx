@@ -93,9 +93,9 @@ export default function Methode() {
       <TitreH2 text1={"Grâce à une méthode"} text2={"en 4 étapes"} />
 
       {/* Conteneur */}
-      <div className="flex flex-row gap-20">
+      <div className="flex h-fit  flex-row gap-20">
         {/* Section Texte (sticky) */}
-        <div className="sticky h-[35vw] top-20 py-[10em] flex flex-col gap-10">
+        <div className="sticky h-[30vw] top-52  flex flex-col gap-10">
           <div className="w-fit font-semibold px-8 py-5 rounded-lg bg-[#ffffff17] flex flex-col justify-center items-center">
             <p className="text-[#8B8B8B]">Étape</p>
             <div className="text-[40px] masked-text overflow-hidden h-[60px]">
@@ -125,7 +125,7 @@ export default function Methode() {
         </div>
 
         {/* Section Images avec défilement */}
-        <div className="relative opacity0 md:opacity-100   overflow-hidden flex mt-32 flex-col gap-60 ml-[0px]">
+        <div className="relative opacity0 md:opacity-100   overflow-hidden flex flex-col gap-60 ml-[0px]">
           
           {composants.map((Component, index) => (
   <Component  ref={el => imagesRef.current[index] = el} />

@@ -15,7 +15,7 @@ const EtapeClaire = forwardRef((props, ref) => {
              <Fenetre/>
      
 
-      <div className="overflow-hidden h-[280px]  p-12 text-[#ffffff] bg-gradient-to-b from-[#171717] to-[#0F0F0F] w-full   gap-3 ">
+      <div className="overflow-hidden h-[430px]  p-12 text-[#ffffff] bg-gradient-to-b from-[#171717] to-[#0F0F0F] w-full   gap-3 ">
         <div>
           <div className="flex w-full items-baseline justify-between">
             <h2 className="w-full text-xl">02-Branding</h2>

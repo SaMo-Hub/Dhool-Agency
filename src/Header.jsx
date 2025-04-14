@@ -115,21 +115,25 @@ function Header() {
         </div>
 
         <div ref={containerImageRef} className="h-[40vw] masked-text mt-40 overflow-x-hidden flex">
-          <div className="images-container flex gap-5">
-            {/* Image 1 */}
-            <img className="h-full min-w-max" src={danteh} alt="Image 1" />
-            {/* Image 2 */}
-            <img className="h-full min-w-max" src={danteh} alt="Image 2" />
-            {/* Image 3 */}
-            <img className="h-full min-w-max" src={danteh} alt="Image 3" />
-            {/* Image 4 */}
-            <img className="h-full min-w-max" src={danteh} alt="Image 4" />
-            {/* Dupliquer les images pour garantir un défilement continu */}
-            <img className="h-full min-w-max" src={danteh} alt="Image 5" />
-            <img className="h-full min-w-max" src={danteh} alt="Image 6" />
-            <img className="h-full min-w-max" src={danteh} alt="Image 7" />
-            <img className="h-full min-w-max" src={danteh} alt="Image 8" />
-          </div>
+            <div className="overflow-hidden select-none border-y border-current text-sm py-2 flex gap-[20px]">
+                  {/* Premier groupe d'images */}
+                  <div className="list-none flex-shrink-0 min-w-full flex justify-between items-center gap-[20px] animate-scroll">
+                    {[...Array(6)].map((_, index) => (
+            <img className="h-full" src={danteh} alt="Image 1" />
+                      
+                    ))}
+                  </div>
+                  <div className="list-none flex-shrink-0 min-w-full flex justify-between items-center gap-[20px] animate-scroll">
+                    {[...Array(6)].map((_, index) => (
+            <img className="h-full" src={danteh} alt="Image 1" />
+                      
+                    ))}
+                  </div>
+          
+                  {/* Deuxième groupe d'images (duplicata pour animation en boucle) */}
+                 
+                </div>
+    
         </div>
       </motion.div>
       <div className="flex md:flex-row sm:w-[60%] md:w-auto flex-col gap-y-10 font-medium gap-x-5 mx-10 md:mx-20  mt-20 justify-center items-center">

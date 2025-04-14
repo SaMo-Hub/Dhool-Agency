@@ -16,6 +16,9 @@ const Notion = forwardRef((props, ref) => {
     { text: "Onboarding", pourcent: 100 },
     { text: "Onboarding", pourcent: 90 },
     { text: "Onboarding", pourcent: 20 },
+    { text: "Onboarding", pourcent: 20 },
+    { text: "Onboarding", pourcent: 20 },
+    { text: "Onboarding", pourcent: 20 },
   ];
 
   return (
@@ -42,7 +45,7 @@ const Notion = forwardRef((props, ref) => {
           <p className="text-sm">Avancement du projet</p>
         </div>
 
-        <div className="grid gap-3 h-40 mt-4 grid-cols-4 w-full">
+        <div className="grid gap-3 h-80 mt-4 grid-rows-4 grid-cols-4 w-full">
           {listAvancement.map((item, index) => (
             <NotionComponenet key={index} index={index + 1} text={item.text} pourcent={item.pourcent} />
           ))}

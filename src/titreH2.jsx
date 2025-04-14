@@ -10,7 +10,7 @@ export default function TitreH2({ textRefs, text1, text2 }) {
   useEffect(() => {
     if (containerRef.current) {
       const words = containerRef.current.querySelectorAll(".word");
-      
+
       gsap.fromTo(
         words,
         { y: 35, opacity: 0, filter: "blur(10px)" },
@@ -32,7 +32,12 @@ export default function TitreH2({ textRefs, text1, text2 }) {
   }, []);
 
   return (
-    <h2 ref={containerRef} className="font-medium whitespace-nowrap  min-w- font-urbanist text-4xl md:text-5xl">
+    <h2
+      ref={containerRef}
+      className="
+      mb-24 
+      font-medium whitespace-nowrap  min-w- font-urbanist text-4xl md:text-5xl"
+    >
       {text1.split(" ").map((word, index) => (
         <span key={index} className="word inline-block mr-2">
           {word}

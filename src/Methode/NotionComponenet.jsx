@@ -3,7 +3,7 @@ import React from 'react'
 export default function NotionComponenet({text, pourcent,index}) {
     
   return (
-    <div className="bg-[#ffffff11] text-sm w-[224px] p-4  border border-[#ffffff09] rounded-xl">
+    <div className="bg-[#ffffff11] text-sm w-[224px] p-4  h-fit border border-[#ffffff09] rounded-xl">
             <h4>{index} - {text}</h4>
             <div className="flex items-center gap-3">
               <p>{pourcent}%</p>

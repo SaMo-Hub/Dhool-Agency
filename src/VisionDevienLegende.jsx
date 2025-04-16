@@ -10,9 +10,9 @@ export default function VisionDevienLegende() {
       <TitreH2 text1={"Quand la vision devient"} text2={"une légende"} />
       <div className="mt-0 gap-20 flex flex-col   ">
         {listProjects.map((item,index) => (
-          <div id={index} className="flex flex-col lg:items-center lg:flex-row gap-5 lg:gap-10 w-full ">
-              <Link className="h-fit" to={`/projets/${item.id}`}>
-                <img className="opacity-20 hover:opacity-30 transition-all duration-500" src={item.logo} alt="" />
+          <div id={index} className="flex flex-col lg:items-center lg:flex-row justify-between gap-5 lg:gap-10 w-full ">
+              <Link className="h-fit w-full " to={`/projets/${item.id}`}>
+                <img className="opacity-20 grayscale hover:grayscale-0  full hover:opacity-80 transition-all duration-500" src={item.logo} alt="" />
               </Link>
               <div className="flex w-fit gap-2">
                 {item.skill.map((item) => (

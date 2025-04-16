@@ -128,18 +128,7 @@ export default function Princing() {
               />
             ))}
           </div>
-          <div className="flex justify-end w-full ">
-            <div className="flex flex-col content-end  gap-2 justify-end items-end ">
-            <h3 className=" font- text-[#7D7D7D] font-urbanist text-lg ">
-                Préferer parler par mail ?
-              </h3>
-              <Button text={"Envoyer un mail"} />
-            </div>
-             
-        
-
-            
-          </div>
+          
         </div>
       </div>
     </div>

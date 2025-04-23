@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Button from "./Button";
 import { Link, useLocation } from "react-router-dom";
 import { gsap } from "gsap";
-
+import logo from '../../public/images/logo.svg'
 export const NavBar = () => {
   const navbarRef = useRef(null);
   const location = useLocation(); // 📌 Capture la location pour détecter le changement de page
@@ -70,7 +70,7 @@ export const NavBar = () => {
 
   const navList = [
     {
-      path: "/projets/1",
+      path: "/#exemple",
       label: "Exemple",
     },
     // {
@@ -112,7 +112,8 @@ export const NavBar = () => {
           to={"/"}
           className="px-2 items-center justify-center flex-shrink-0"
         >
-          LOGO
+          <img className="h-6" src={logo} alt="" />
+          
         </Link>
 
         {/* Texte à droite */}

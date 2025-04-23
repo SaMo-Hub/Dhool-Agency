@@ -17,7 +17,7 @@ export default function VisionDevienLegende() {
               <div className="flex w-fit gap-2">
                 {item.skill.map((item) => (
                   <div className="text-[#ffffff42] whitespace-nowrap w-fit rounded-lg bg-[#ffffff1b]  h-fit py-1  px-4">
-                    <p className="flex-shrink-0">
+                    <p className="flex-shrink-0 font-light  text-base">
 
                     {item}
                     </p>
@@ -26,11 +26,11 @@ export default function VisionDevienLegende() {
               </div>
             <div className="justify-between flex-col md:flex-row flex gap-10  md:items-end">
               <div key={item.id} className="flex flex-col gap-2 ">
-                <h4 className="font-medium text-xl text-[#7d7d7d] ">
+                <h4 className="font-medium  text-xl text-[#7d7d7d] ">
                   {item.name}
                 </h4>
                 {/* sm:w-[80%] md:w-[80%] */}
-                <p className="leading-5 w-full  ">
+                <p className="leading-5 w-full font-light ">
                   {item.description}
                 </p>
               </div>

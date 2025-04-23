@@ -28,7 +28,7 @@ export const PrendreRdv = () => {
 	/>
             <div className="flex flex-col   gap-2 justify-center items-center ">
             <h3 className=" font- text-[#7D7D7D] font-urbanist text-lg ">
-                Préferer parler par mail ?
+            Préférer parler parler par mail ?
               </h3>
               <Button mail={true} secondary={true} text={"Envoyer un mail"} />
             </div>

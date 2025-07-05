@@ -74,7 +74,7 @@ export default function FAQ() {
   return (
     <div
       id="faq"
-      className="mx-10 md:mx-20 gap-x-10  gap-10 justify-between pb-24 lg:flex-row flex-col flex mt-72 lg:mt-80 "
+      className="mx-10 md:mx-20 gap-x-10 gap-10 justify-between pb-24 lg:flex-row flex-col flex mt-72 lg:mt-80 "
     >
       <TitreH2
         textRefs={textRef}

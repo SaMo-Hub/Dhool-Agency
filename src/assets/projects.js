@@ -38,6 +38,17 @@ import KhansFullwebsite2 from "/public/images/Khan/fullwebsite2.png";
 import Khanallframe from "/public/images/Khan/allframe.png";
 import Khanlogovariation from "/public/images/Khan/logovariation.png";
 
+import ClefLogo from "/public/images/Clef-des-orges/Logo.png";
+import Clef1 from "/public/images/Clef-des-orges/1.png";
+import Clef2 from "/public/images/Clef-des-orges/2.png";
+import Clef3 from "/public/images/Clef-des-orges/3.png";
+import Clef4 from "/public/images/Clef-des-orges/4.png";
+import ClefLclef from "/public/images/Clef-des-orges/clef.png";
+import Cleflogobanner from "/public/images/Clef-des-orges/logobanner.png";
+import Clefbanner from "/public/images/Clef-des-orges/banner.png";
+
+
+
 export const listProjects = [
  
   {
@@ -118,6 +129,24 @@ export const listProjects = [
       { img: Travui1 },
       { img: Travui2 },
       { img: Travallframe },
+    ],
+    description:
+      "Kosmo, a Paris-based 3D & CGI studio specializing in FOOH marketing, needed a digital presence that matched its high-end expertise. This project redefined its visual identity with a bold and stylish art direction, elevating the studio’s brand value.",
+    skill: ["UI / UX Design", "Logo"],
+  },
+  {
+    id: 6,
+    name: "Clef des orges",
+    logo: ClefLogo,
+    listImage: [
+      { img:Cleflogobanner },
+      { img:Clefbanner },
+      { img:Clef2 },
+      { img:Clef3 },
+      { img:Clef4 },
+      { img:Clef1 },
+   
+
     ],
     description:
       "Kosmo, a Paris-based 3D & CGI studio specializing in FOOH marketing, needed a digital presence that matched its high-end expertise. This project redefined its visual identity with a bold and stylish art direction, elevating the studio’s brand value.",

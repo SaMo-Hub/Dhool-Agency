@@ -95,7 +95,7 @@ export default function Methode() {
       {/* Conteneur */}
       <div className="flex h-fit  flex-row gap-20">
         {/* Section Texte (sticky) */}
-        <div className="sticky h-[30vw] top-52  flex flex-col gap-10">
+        <div className="sticky h-[440px] ms:h-[30vw] top-52  flex flex-col gap-10">
           <div className="w-fit font-semibold px-8 py-5 rounded-lg bg-[#ffffff17] flex flex-col justify-center items-center">
             <p className="text-[#8B8B8B]">Étape</p>
             <div className="text-[40px] masked-text overflow-hidden h-[60px]">
